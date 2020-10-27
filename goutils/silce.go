@@ -9,6 +9,27 @@ func StringInSlice(element string, slice []string) bool {
 	return false
 }
 
+func Int32InSlice(element int32, slice []int32) bool {
+	for _, s := range slice {
+		if s == element {
+			return true
+		}
+	}
+
+	return false
+}
+
+func IntInSlice(element int, slice []int) bool {
+	for _, s := range slice {
+		if s == element {
+			return true
+		}
+	}
+
+	return false
+}
+
+
 func Int64InSlice(element int64, slice []int64) bool {
 	for _, s := range slice {
 		if s == element {
