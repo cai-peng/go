@@ -30,7 +30,7 @@ func (d *db) Connection() (db *sql.DB, err error) {
 		d.password, "@tcp(",
 		d.host, ":",
 		d.port, ")/",
-		d.dbName, "?charset=utf8",
+		d.dbName, "?charset=utf8mb4",
 		"&timeout=5s&interpolateParams=true",
 	}
 	db, err = sql.Open("mysql", strings.Join(config, ""))
